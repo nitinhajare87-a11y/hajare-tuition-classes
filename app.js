@@ -26,6 +26,7 @@ async function saveToGoogleSheet(data){
 
 async function quickWhatsApp(){
   const data={
+    source: "quick",
     studentName:"Quick Inquiry",
     parentName:"",
     mobile:"",
@@ -50,6 +51,7 @@ document.getElementById("inquiryForm").addEventListener("submit",async function(
   const status=document.getElementById("formStatus");
   const f=new FormData(this);
   const data={
+    source: "full",
     studentName:f.get("studentName"),
     parentName:f.get("parentName"),
     mobile:f.get("mobile"),
