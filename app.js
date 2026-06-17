@@ -34,7 +34,7 @@ document.getElementById("inquiryForm").addEventListener("submit", async function
   const status = document.getElementById("formStatus");
   const formData = new FormData(this);
 
-  const data = {
+  const data = {   
     studentName: formData.get("studentName"),
     parentName: formData.get("parentName"),
     mobile: formData.get("mobile"),
@@ -43,7 +43,7 @@ document.getElementById("inquiryForm").addEventListener("submit", async function
     mode: formData.get("mode"),
     message: formData.get("message")
   };
-
+preferredTiming: formData.get("preferredTiming"),
   status.textContent = "Submitting...";
   status.style.color = "#0b3d91";
 
