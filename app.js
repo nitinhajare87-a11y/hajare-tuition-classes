@@ -1,5 +1,5 @@
 // Paste Google Apps Script Web App URL here after deployment
-const SCRIPT_URL = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxG6dlEaJQ-p3NQsZCkdlP9MQbsov51RNHAgz27BVOBhQ-PsPzsyTbTpyM-cDVyKl90/exec";
 
 function toggleMenu() {
   document.getElementById("menu").classList.toggle("show");
