@@ -1,344 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Hajare Tuition Classes | Nursery to 12th | Lohegaon Pune</title>
-  <meta name="description" content="Hajare Tuition Classes by Monal Hajare. Online and offline tuition for Nursery to 12th in Shree Nidhi Society, Porwal Road, Lohegaon, Pune." />
-  <meta name="keywords" content="Tuition Classes Lohegaon, Home Tuition Pune, Online Tuition, Nursery to 12th Tuition, English Math Science Marathi Computer Tuition" />
-  <meta name="theme-color" content="#0b3d91" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hajare Tuition Classes | Lohegaon Pune</title>
+<meta name="description" content="Hajare Tuition Classes - Nursery to Class 10 and Class 11-12 Commerce tuition in Lohegaon Pune.">
+<meta name="theme-color" content="#0b3d91">
+<link rel="manifest" href="manifest.json">
 <link rel="icon" href="logo.png">
-<link rel="apple-touch-icon" href="logo.png">
-  <link rel="manifest" href="manifest.json" />
-  <link rel="icon" href="icon.svg" />
-  <link rel="apple-touch-icon" href="icon.svg" />
-  <link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <div class="top-notice">
-    📍 Shree Nidhi Society, Porwal Road, Lohegaon, Pune | 📞 7011514457
+
+<div class="top">📍 Shree Nidhi Society, Porwal Road, Lohegaon, Pune | 📞 7011514457</div>
+
+<header>
+  <a class="brand" href="#home">
+    <img src="logo.png" alt="Hajare Tuition Logo">
+    <div>
+      <h1>Hajare Tuition Classes</h1>
+      <p>Better Learning, Brighter Results</p>
+    </div>
+  </a>
+  <button class="menu" onclick="toggleMenu()">☰</button>
+  <nav id="nav">
+    <a href="#home">Home</a>
+    <a href="#courses">Courses</a>
+    <a href="#login">Login</a>
+    <a href="#payment">Pay Fees</a>
+    <a href="#contact">Contact</a>
+    <a class="wh" href="https://wa.me/917011514457" target="_blank">WhatsApp</a>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <div>
+    <span class="badge">Online + Offline Tuition</span>
+    <h2>Best Tuition for Nursery to Class 10 & 11–12 Commerce</h2>
+    <p>Strong foundation, personal attention, regular practice, and parent updates for better confidence and better results.</p>
+
+    <div class="search">
+      <select id="classSelect">
+        <option value="">Select Class</option>
+        <option>Nursery</option><option>LKG</option><option>UKG</option>
+        <option>Class 1</option><option>Class 2</option><option>Class 3</option><option>Class 4</option><option>Class 5</option>
+        <option>Class 6</option><option>Class 7</option><option>Class 8</option><option>Class 9</option><option>Class 10</option>
+        <option>Class 11 Commerce</option><option>Class 12 Commerce</option>
+      </select>
+      <select id="subjectSelect">
+        <option value="">Select Subject</option>
+        <option>English</option><option>Mathematics</option><option>Science</option><option>Marathi</option><option>Hindi</option>
+        <option>Computer</option><option>C Programming</option><option>Accountancy</option><option>Book Keeping</option>
+        <option>Economics</option><option>Organization of Commerce (OC)</option><option>Secretarial Practice (SP)</option>
+      </select>
+      <button onclick="quickWhatsApp()">Find Tuition</button>
+    </div>
+
+    <div class="actions">
+      <a class="call" href="tel:7011514457">📞 Call Now</a>
+      <a class="whats" href="https://wa.me/917011514457" target="_blank">💬 WhatsApp Inquiry</a>
+      <a class="map" href="https://maps.app.goo.gl/brtfVc1MrGqUamvJ9" target="_blank">📍 Open Map</a>
+    </div>
   </div>
 
-  <header class="navbar">
-    <a class="brand" href="#home">
-      <img src="logo.png" alt="Hajare Tuition Classes Logo" class="site-logo">
-      <div>
-        <h1>Hajare Tuition Classes</h1>
-        <p>Better Learning, Brighter Results</p>
-      </div>
-    </a>
-
-    <button class="menu-btn" onclick="toggleMenu()">☰</button>
-
-    <nav id="menu">
-      <a href="#home">Home</a>
-      <a href="#courses">Courses</a>
-      <a href="#why">Why Us</a>
-      <a href="#fees">Timings</a>
-      <a href="#contact">Contact</a>
-      <a class="nav-cta" href="https://wa.me/917011514457" target="_blank">WhatsApp</a>
-    </nav>
-  </header>
-
-  <main>
-    <section id="home" class="hero">
-      <div class="hero-text">
-        <span class="pill">Online + Offline Tuition</span>
-        <h2>Best Tuition for Nursery to Class 12</h2>
-        <p>
-          Strong foundation, personal attention, regular practice, and parent updates
-          for better confidence and better results.
-        </p>
-
-        <div class="hero-search">
-          <select id="classSelect">
-            <option value="">Select Class</option>
-           <option>Nursery</option>
-<option>LKG</option>
-<option>UKG</option>
-<option>Class 1</option>
-<option>Class 2</option>
-<option>Class 3</option>
-<option>Class 4</option>
-<option>Class 5</option>
-<option>Class 6</option>
-<option>Class 7</option>
-<option>Class 8</option>
-<option>Class 9</option>
-<option>Class 10</option>
-<option>Class 11 Commerce</option>
-<option>Class 12 Commerce</option>
-          </select>
-
-          <select id="subjectSelect">
-            <option value="">Select Subject</option>
-            <option>English</option>
-<option>Mathematics</option>
-<option>Science</option>
-<option>Marathi</option>
-<option>Hindi</option>
-<option>Computer</option>
-<option>C Programming</option>
-<option>Accountancy</option>
-<option>Economics</option>
-<option>Book Keeping</option>
-<option>Organization of Commerce (OC)</option>
-<option>Secretarial Practice (SP)</option>
-          </select>
-
-          <button onclick="quickWhatsApp()">Find Tuition</button>
-        </div>
-
-        <div class="hero-actions">
-          <a class="btn primary" href="tel:7011514457">📞 Call Now</a>
-          <a class="btn secondary" href="https://wa.me/917011514457" target="_blank">💬 WhatsApp Inquiry</a>
-          <a class="btn outline" href="https://maps.app.goo.gl/brtfVc1MrGqUamvJ9" target="_blank">📍 Open Map</a>
-        </div>
-      </div>
-
-      <div class="hero-card">
-        <h3>Admission Open</h3>
-        <p>For Nursery to Class 12</p>
-        <ul>
-          <li>✔ English, Math, Science</li>
-          <li>✔ Marathi, Computer, C Programming</li>
-          <li>✔ Online + Offline Batches</li>
-          <li>✔ Morning & Evening Timing</li>
-        </ul>
-        <a href="#contact">Submit Inquiry</a>
-      </div>
-    </section>
-
-    <section class="stats">
-      <div>
-        <strong>Nursery–12th</strong>
-        <span>All Classes</span>
-      </div>
-      <div>
-        <strong>6 Subjects</strong>
-        <span>School + Computer</span>
-      </div>
-      <div>
-        <strong>Online/Offline</strong>
-        <span>Flexible Mode</span>
-      </div>
-      <div>
-        <strong>Lohegaon</strong>
-        <span>Pune Area</span>
-      </div>
-    </section>
-
-    <section id="courses" class="section">
-      <div class="section-head">
-        <span>Courses</span>
-        <h2>Choose Course by Class</h2>
-        <p>Structured tuition support as per student level and learning need.</p>
-      </div>
-
-      <div class="course-grid">
-        <article class="course-card">
-          <div class="icon">🎒</div>
-          <h3>Nursery / LKG / UKG</h3>
-          <p>Basic learning, reading, writing, numbers, rhymes, and confidence building.</p>
-          <button onclick="courseInquiry('Nursery / LKG / UKG')">Enquire Now</button>
-        </article>
-
-        <article class="course-card">
-          <div class="icon">📚</div>
-          <h3>Class 1–5</h3>
-          <p>Foundation in English, Math, Science, Marathi, reading, and writing practice.</p>
-          <button onclick="courseInquiry('Class 1-5')">Enquire Now</button>
-        </article>
-
-        <article class="course-card">
-          <div class="icon">🧠</div>
-          <h3>Class 6–8</h3>
-          <p>Concept clarity, homework support, chapter revision, and regular tests.</p>
-          <button onclick="courseInquiry('Class 6-8')">Enquire Now</button>
-        </article>
-
-        <article class="course-card">
-          <div class="icon">🎯</div>
-          <h3>Class 9–10</h3>
-          <p>Board exam preparation, important questions, practice tests, and doubt solving.</p>
-          <button onclick="courseInquiry('Class 9-10')">Enquire Now</button>
-        </article>
-
-        <article class="course-card">
-          <div class="icon">🏆</div>
-          <h3>Class 11–12</h3>
-          <p>Selected subject guidance with regular practice and progress monitoring.</p>
-          <button onclick="courseInquiry('Class 11-12')">Enquire Now</button>
-        </article>
-
-        <article class="course-card featured">
-          <div class="icon">💻</div>
-          <h3>Computer & C Programming</h3>
-          <p>Computer basics and C programming learning for school and beginner students.</p>
-          <button onclick="courseInquiry('Computer / C Programming')">Enquire Now</button>
-        </article>
-      </div>
-    </section>
-
-    <section id="why" class="section blue-section">
-      <div class="section-head white">
-        <span>Why Choose Us</span>
-        <h2>Parent-Friendly Learning Support</h2>
-        <p>Simple teaching process designed for school students and parents.</p>
-      </div>
-
-      <div class="why-grid">
-        <div class="why-card">
-          <h3>Personal Attention</h3>
-          <p>Small batch style guidance helps every student ask doubts freely.</p>
-        </div>
-        <div class="why-card">
-          <h3>Regular Practice</h3>
-          <p>Homework, revision, and test practice for better exam preparation.</p>
-        </div>
-        <div class="why-card">
-          <h3>Parent Updates</h3>
-          <p>Parents can discuss progress, attendance, and study improvement.</p>
-        </div>
-        <div class="why-card">
-          <h3>Flexible Learning</h3>
-          <p>Online and offline learning support available for nearby students.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="fees" class="section two-col">
-      <div class="content-box">
-        <span class="small-title">Timings</span>
-        <h2>Class Timing</h2>
-        <div class="timing-row">
-          <b>Morning Batch</b>
-          <span>9 AM – 10 AM</span>
-        </div>
-        <div class="timing-row">
-          <b>Evening Batch</b>
-          <span>4 PM – 6 PM</span>
-        </div>
-        <div class="timing-row">
-          <b>Mode</b>
-          <span>Online + Offline</span>
-        </div>
-        <p class="note">Fee details can be shared after class, subject, and timing confirmation.</p>
-      </div>
-
-      <div class="content-box">
-        <span class="small-title">Subjects</span>
-        <h2>Subjects Available</h2>
-        <div class="subject-tags">
-          <span>English</span>
-          <span>Math</span>
-          <span>Science</span>
-          <span>Marathi</span>
-          <span>Computer</span>
-          <span>C Programming</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section testimonials">
-      <div class="section-head">
-        <span>Reviews</span>
-        <h2>Student & Parent Feedback</h2>
-      </div>
-
-      <div class="review-grid">
-        <div class="review-card">
-          <p>“Good explanation and personal attention for my child.”</p>
-          <b>Parent Review</b>
-        </div>
-        <div class="review-card">
-          <p>“Regular practice helped me improve confidence in Math.”</p>
-          <b>Student Review</b>
-        </div>
-        <div class="review-card">
-          <p>“Online and offline options are helpful for parents.”</p>
-          <b>Parent Review</b>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact">
-      <div class="section-head">
-        <span>Contact</span>
-        <h2>Book Free Inquiry</h2>
-        <p>Fill the form or directly contact on WhatsApp.</p>
-      </div>
-
-      <div class="contact-grid">
-        <form id="inquiryForm" class="inquiry-form">
-          <h3>Student Inquiry Form</h3>
-
-          <input type="text" name="studentName" placeholder="Student Name" required />
-          <input type="text" name="parentName" placeholder="Parent Name" required />
-          <input type="tel" name="mobile" placeholder="Mobile Number" required />
-          <input type="text" name="studentClass" placeholder="Class / Standard" required />
-          <input type="text" name="subject" placeholder="Subject Required" required />
-          <select name="preferredTiming" required>
-  <option value="">Preferred Timing</option>
-  <option>Morning 9 AM - 10 AM</option>
-  <option>Evening 4 PM - 6 PM</option>
-</select>
-
-          <select name="mode" required>
-            <option value="">Select Mode</option>
-            <option>Online</option>
-            <option>Offline</option>
-            <option>Both</option>
-          </select>
-
-          <textarea name="message" placeholder="Message / Requirement"></textarea>
-
-          <button type="submit">Submit Inquiry</button>
-          <p id="formStatus"></p>
-        </form>
-
-        <div class="contact-card">
-          <h3>Hajare Tuition Classes</h3>
-          <p><b>Owner:</b> Monal Hajare</p>
-          <p><b>Call:</b> <a href="tel:7011514457">7011514457</a></p>
-          <p><b>WhatsApp:</b> <a href="https://wa.me/917011514457" target="_blank">7011514457</a></p>
-          <p><b>Email:</b> <a href="mailto:nhajare1987@gmail.com">nhajare1987@gmail.com</a></p>
-          <p><b>Address:</b> Shree Nidhi Society, Porwal Road, Lohegaon, Pune</p>
-
-          <div class="contact-actions">
-            <a href="https://maps.app.goo.gl/brtfVc1MrGqUamvJ9" target="_blank">Open Google Map</a>
-            <a href="https://wa.me/917011514457" target="_blank">WhatsApp Now</a>
-          </div>
-
-          <div class="map-box">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.3092473835245!2d73.91092277427276!3d18.605155266586845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c69543c94c43%3A0xb8fad58419f97cd8!2sShree%20Nidhi!5e0!3m2!1sen!2sin!4v1781707127540!5m2!1sen!2sin"
-              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="collab">
-      <h2>Tutor Collaboration Guidance</h2>
-      <p>
-        Tutor registration is not open now. In future, qualified tutors can contact
-        Hajare Tuition Classes for collaboration after verification.
-      </p>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2026 Hajare Tuition Classes | Better Learning, Brighter Results</p>
-  </footer>
-
-  <div class="bottom-bar">
-    <a href="tel:7011514457">Call</a>
-    <a href="https://wa.me/917011514457" target="_blank">WhatsApp</a>
-    <a href="https://maps.app.goo.gl/brtfVc1MrGqUamvJ9" target="_blank">Map</a>
+  <div class="admit">
+    <h3>Admission Open</h3>
+    <p>For Nursery to Class 10 & 11–12 Commerce</p>
+    <ul>
+      <li>✓ English, Math, Science</li>
+      <li>✓ Marathi, Hindi, Computer</li>
+      <li>✓ Commerce all subjects</li>
+      <li>✓ Morning & Evening Timing</li>
+    </ul>
+    <a href="#contact">Submit Inquiry</a>
   </div>
+</section>
 
-  <script src="app.js"></script>
+<section class="stats">
+  <div><b>Nursery–10th</b><span>School Classes</span></div>
+  <div><b>11–12 Commerce</b><span>All Subjects</span></div>
+  <div><b>Online/Offline</b><span>Flexible Mode</span></div>
+  <div><b>Lohegaon</b><span>Pune Area</span></div>
+</section>
+
+<section id="courses" class="section">
+  <h2>Courses</h2>
+  <div class="grid">
+    <div class="card"><h3>Nursery / LKG / UKG</h3><p>Basic learning, writing and confidence.</p><button onclick="courseInquiry('Nursery / LKG / UKG')">Enquire</button></div>
+    <div class="card"><h3>Class 1–5</h3><p>Foundation learning and school support.</p><button onclick="courseInquiry('Class 1-5')">Enquire</button></div>
+    <div class="card"><h3>Class 6–8</h3><p>Concept clarity, homework and revision.</p><button onclick="courseInquiry('Class 6-8')">Enquire</button></div>
+    <div class="card"><h3>Class 9–10</h3><p>Board exam preparation and tests.</p><button onclick="courseInquiry('Class 9-10')">Enquire</button></div>
+    <div class="card"><h3>Class 11–12 Commerce</h3><p>Accountancy, Economics, BK, OC, SP.</p><button onclick="courseInquiry('Class 11-12 Commerce')">Enquire</button></div>
+    <div class="card"><h3>Computer & C Programming</h3><p>Computer basics and C programming.</p><button onclick="courseInquiry('Computer / C Programming')">Enquire</button></div>
+  </div>
+</section>
+
+<section id="login" class="section light">
+  <h2>Student & Admin Login</h2>
+  <div class="portal">
+    <div class="box">
+      <h3>Student Login</h3>
+      <input id="studentMobile" type="tel" placeholder="Enter mobile number">
+      <button onclick="studentLogin()">Login as Student</button>
+      <div id="studentPanel" class="dash hidden">
+        <h4>Student Dashboard</h4>
+        <p><b>Attendance:</b> Coming soon</p>
+        <p><b>Homework:</b> Coming soon</p>
+        <p><b>Fee Status:</b> Coming soon</p>
+        <p><b>Test Results:</b> Coming soon</p>
+        <p><b>Parent Dashboard:</b> Phase-2</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <h3>Admin Login</h3>
+      <input id="adminPassword" type="password" placeholder="Enter admin password">
+      <button onclick="adminLogin()">Login as Admin</button>
+      <div id="adminPanel" class="dash hidden">
+        <h4>Admin Dashboard</h4>
+        <p><b>Inquiries:</b> Check Google Sheet</p>
+        <p><b>Attendance:</b> Phase-2</p>
+        <p><b>Homework:</b> Phase-2</p>
+        <p><b>Fee Tracking:</b> Phase-2</p>
+        <p><b>Test Results:</b> Phase-2</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="payment" class="section pay">
+  <h2>Pay Tuition Fees</h2>
+  <p>Use UPI or request Razorpay/UPI payment link on WhatsApp.</p>
+  <div class="paybox">
+    <a href="upi://pay?pa=YOUR_UPI_ID@bank&pn=Hajare%20Tuition%20Classes&cu=INR" target="_blank">Pay by UPI</a>
+    <a href="https://wa.me/917011514457?text=Hello%20Hajare%20Tuition%20Classes,%20please%20share%20fee%20payment%20details." target="_blank">Request Payment Link</a>
+  </div>
+  <small>Replace YOUR_UPI_ID@bank with correct active UPI ID.</small>
+</section>
+
+<section id="contact" class="section">
+  <h2>Book Inquiry</h2>
+  <div class="contactgrid">
+    <form id="inquiryForm" class="form">
+      <h3>Student Inquiry Form</h3>
+      <input type="text" name="studentName" placeholder="Student Name" required>
+      <input type="text" name="parentName" placeholder="Parent Name" required>
+      <input type="tel" name="mobile" placeholder="Mobile Number" required>
+      <input type="text" name="studentClass" placeholder="Class / Standard" required>
+      <input type="text" name="subject" placeholder="Subject Required" required>
+      <select name="preferredTiming" required>
+        <option value="">Preferred Timing</option>
+        <option>Morning 9 AM - 10 AM</option>
+        <option>Evening 4 PM - 6 PM</option>
+      </select>
+      <select name="mode" required>
+        <option value="">Online / Offline</option>
+        <option>Online</option>
+        <option>Offline</option>
+        <option>Both</option>
+      </select>
+      <textarea name="message" placeholder="Message"></textarea>
+      <button type="submit">Submit Inquiry</button>
+      <p id="formStatus"></p>
+    </form>
+
+    <div class="contactcard">
+      <h3>Hajare Tuition Classes</h3>
+      <p><b>Owner:</b> Monal Hajare</p>
+      <p><b>Phone/WhatsApp:</b> 7011514457</p>
+      <p><b>Email:</b> nhajare1987@gmail.com</p>
+      <p><b>Timing:</b> Morning 9 AM–10 AM, Evening 4 PM–6 PM</p>
+      <p><b>Address:</b> Shree Nidhi Society, Porwal Road, Lohegaon, Pune</p>
+      <a class="mapbtn" href="https://maps.app.goo.gl/brtfVc1MrGqUamvJ9" target="_blank">Open Google Map</a>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.3092473835245!2d73.91092277427276!3d18.605155266586845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c69543c94c43%3A0xb8fad58419f97cd8!2sShree%20Nidhi!5e0!3m2!1sen!2sin!4v1781707127540!5m2!1sen!2sin" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Hajare Tuition Classes | Better Learning, Brighter Results</footer>
+
+<div class="bottom">
+  <a href="tel:7011514457">Call</a>
+  <a href="https://wa.me/917011514457" target="_blank">WhatsApp</a>
+  <a href="https://maps.app.goo.gl/brtfVc1MrGqUamvJ9" target="_blank">Map</a>
+</div>
+
+<script src="app.js"></script>
 </body>
 </html>
