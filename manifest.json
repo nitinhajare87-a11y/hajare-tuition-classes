@@ -1,19 +1,17 @@
 {
   "name": "Hajare Tuition Classes",
   "short_name": "Hajare Tuition",
-  "description": "Better Learning, Brighter Results",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#f6f8ff",
+  "background_color": "#f4f7ff",
   "theme_color": "#0b3d91",
   "orientation": "portrait",
   "icons": [
-  {
-    "src": "logo.png",
-    "sizes": "512x512",
-    "type": "image/png",
-    "purpose": "any maskable"
-  }
-]
+    {
+      "src": "logo.png",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
   ]
 }
