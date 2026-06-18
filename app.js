@@ -87,3 +87,11 @@ function adminLogin(){
   document.getElementById("adminPanel").classList.remove("hidden");
 }
 if("serviceWorker" in navigator){window.addEventListener("load",()=>navigator.serviceWorker.register("service-worker.js"));}
+
+function showQR(){
+  document.getElementById("qrBox").classList.remove("hidden");
+}
+
+function hideQR(){
+  document.getElementById("qrBox").classList.add("hidden");
+}
