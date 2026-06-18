@@ -25,17 +25,17 @@ async function saveToGoogleSheet(data){
 }
 
 async function quickWhatsApp(){
-  const data={
-    source: "quick",
-    studentName:"Quick Inquiry",
-    parentName:"",
-    mobile:"",
-    studentClass:document.getElementById("classSelect").value||"",
-    subject:document.getElementById("subjectSelect").value||"",
-    preferredTiming:"",
-    mode:"Online / Offline",
-    message:"Inquiry from Find Tuition button"
-  };
+const data = {
+  source: "quick",
+  studentName: "Quick Inquiry",
+  parentName: "",
+  mobile: "",
+  studentClass: document.getElementById("classSelect").value || "",
+  subject: document.getElementById("subjectSelect").value || "",
+  preferredTiming: "",
+  mode: "Online / Offline",
+  message: "Inquiry from Find Tuition button"
+};
   try{await saveToGoogleSheet(data);}catch(e){console.log(e);}
   sendWhatsAppInquiry(data);
 }
