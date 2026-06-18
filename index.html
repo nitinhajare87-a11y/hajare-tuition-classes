@@ -130,19 +130,23 @@
 
 <section id="payment" class="section pay">
   <h2>Pay Tuition Fees</h2>
-  <p>Use UPI or request Razorpay/UPI payment link on WhatsApp.</p>
-    <div class="payment-qr">
+  <p>Click button to view QR code.</p>
+
+  <button class="show-qr-btn" onclick="showQR()">Show Payment QR</button>
+
+  <div id="qrBox" class="payment-qr hidden">
     <img src="payment-qr.png" alt="UPI Payment QR">
-      <a href="https://wa.me/917011514457?text=I%20have%20paid%20the%20tuition%20fees.%20Please%20verify."
-class="pay-confirm">
-Payment Done - Send Screenshot
-</a>
     <h3>Pay Tuition Fees</h3>
-    <p>Scan QR using Google Pay, PhonePe, Paytm or any UPI App</p>
-    <p><b>UPI Number:</b> 8669626405@okbizaxis</p>
-</div>
-    <a href="upi://pay?pa=YOUR_UPI_ID@bank&pn=Hajare%20Tuition%20Classes&cu=INR" target="_blank">Pay by UPI</a>
-    <a href="https://wa.me/917011514457?text=Hello%20Hajare%20Tuition%20Classes,%20please%20share%20fee%20payment%20details." target="_blank">Request Payment Link</a>
+    <p>Scan using Google Pay, PhonePe, Paytm or any UPI App</p>
+    <p><b>UPI:</b> 8669626405@okbizaxis</p>
+
+    <a class="pay-confirm" target="_blank"
+       href="https://wa.me/917011514457?text=I%20have%20paid%20the%20tuition%20fees.%20Please%20verify.">
+      Payment Done - Send Screenshot
+    </a>
+
+    <br><br>
+    <button class="hide-qr-btn" onclick="hideQR()">Close QR</button>
   </div>
 </section>
 
